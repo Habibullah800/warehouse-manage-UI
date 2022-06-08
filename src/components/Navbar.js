@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = () => {
     return (
         <div>
-            <div class="navbar bg-base-100">
+            <div class="navbar  bg-[#EDF9EF]">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -16,14 +16,14 @@ const Navbar = () => {
                             <li><a>Item 3</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                    <a class="font-semibold pl-4 normal-case text-xl text-[#4cd137]">Kent Inventory</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal p-0">
-                        <li><a>Item 1</a></li>
+                        <li className='rounded-b-xl bg-lime-200 shadow-lg shadow-cyan-300/50 ml-2 px-4'><a>Item 1</a></li>
 
-                        <li><a>Item 2</a></li>
-                        <li><a>Item 3</a></li>
+                        <li className='rounded-b-xl bg-lime-200 shadow-lg shadow-cyan-300/50 ml-2 px-4'><a>Item 2</a></li>
+                        <li className='rounded-b-xl bg-lime-200 shadow-lg shadow-cyan-300/50 ml-2 px-4'><a>Item 3</a></li>
                     </ul>
                 </div>
 
@@ -34,7 +34,7 @@ const Navbar = () => {
                             <img src="https://api.lorem.space/image/face?hash=33791" alt='profile' />
                         </div>
                     </label>
-                    <a class="btn">Log in</a>
+                    <a class="btn bg-lime-200 shadow-lg shadow-cyan-300/50">Log in</a>
 
                 </div>
 
