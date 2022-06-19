@@ -4,7 +4,6 @@ import Wave from 'react-wavify';
 const Footer = () => {
     return (
         <div>
-
             <div className='h-12'>
                 <Wave mask="url(#mask)" fill="#EAF9EB" >
                     <defs>
@@ -12,15 +11,12 @@ const Footer = () => {
                             <stop offset="0" stopColor="#ffeaa7" />
                             <stop offset="0.9" stopColor="#ffeaa7" />
                         </linearGradient>
-
                         <mask id="mask">
                             <rect x="0" y="0" width="2000" height="300" fill="url(#gradient)" />
                         </mask>
                     </defs>
                 </Wave>
             </div>
-
-
             <footer class="footer footer-center p-10 bg-[#EAF9EB] text-base-content rounded">
                 <div class="grid grid-flow-col gap-4">
                     <a class="link link-hover">About us</a>

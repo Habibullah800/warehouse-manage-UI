@@ -47,8 +47,6 @@ const Chart = () => {
         }
     ]
 
-
-
     const barChartData = [
         {
             "name": "Page A",
@@ -88,10 +86,11 @@ const Chart = () => {
     ]
     return (
         <div className='my-9'>
-            <h2 className='font-bold text-4xl text-[#4cd137] mb-4'>Total Statistics</h2>
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 justify-around '>
+            <h2 className='font-semibold text-4xl text-[#4cd137] mb-8'>Total Statistics</h2>
+            <div className='grid grid-cols-1 px-5 lg:grid-cols-2 gap-4 justify-around '>
 
-                <div class="card flex-1 pt-4 m-0 lg:m-4 h-96 card-compact w-[100%] bg-base-100 shadow-xl">
+                <div class="card flex-1 pt-4  m-0 lg:m-4 h-100 card-compact w-[100%] bg-base-100 shadow-xl">
+                    <h2 className='font-semibold text-2xl mb-4 text-[#192a56]'>Sales Vs Stock</h2>
                     <BarChart width={570} height={370} data={barChartData}>
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="name" />
@@ -102,7 +101,8 @@ const Chart = () => {
                         <Bar dataKey="uv" fill="#82ca9d" />
                     </BarChart>
                 </div>
-                <div class="card flex-1  pt-4 m-0 lg:m-4  h-96 card-compact w-[100%] bg-base-100 shadow-xl">
+                <div class="card flex-1  pt-4 m-0 lg:m-4  h-100 card-compact w-[100%] bg-base-100 shadow-xl">
+                    <h2 className='font-semibold text-2xl mb-4 text-[#192a56]'>Revenue Vs Cost</h2>
 
                     <AreaChart width={570} height={370} data={areaChartData}
                         margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
@@ -124,10 +124,6 @@ const Chart = () => {
                         <Area type="monotone" dataKey="pv" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
                     </AreaChart>
                 </div>
-
-
-
-
             </div>
         </div>
     );
