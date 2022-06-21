@@ -8,6 +8,8 @@ import PrivateRoute from './authentication/PrivateRoute';
 import Register from './components/Register';
 import ManageInventory from './components/inventory/ManageInventory';
 import AddItem from './components/AddItem/AddItem';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -31,7 +33,7 @@ function App() {
         <Route path="register" element={<Register />} />
       </Routes>
 
-
+      <ToastContainer />
     </div>
   );
 }

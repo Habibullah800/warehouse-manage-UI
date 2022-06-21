@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
 import useFirebase from '../../authentication/useFirebase';
 import Footer from '../Footer';
@@ -7,8 +8,28 @@ import Inventory from './Inventory';
 const ManageInventory = () => {
     const [inventories, setInventory] = useState([]);
 
+    // const [products, setProducts] = useProducts();
+
+    const handleDelete = id => {
+        const proceed = window.confirm('Are you sure?')
+        if (proceed) {
+            const url = `http://localhost:5000/product/${id}`;
+            fetch(url, {
+                method: 'Delete'
+            })
+                .then(res => res.json())
+                .then(result => {
+                    console.log(result);
+                    const remaining = inventories.filter(product => product._id !== id)
+                    setInventory(remaining);
+                    toast.error("Successfully Deleted Item!");
+                })
+        }
+    }
+
+
     useEffect(() => {
-        fetch('items.json')
+        fetch('http://localhost:5000/product')
             .then(res => res.json())
             .then(data => setInventory(data));
     }, [])
@@ -25,6 +46,7 @@ const ManageInventory = () => {
                     inventories.map(inventor => <Inventory
                         key={inventor.id}
                         inventor={inventor}
+                        handleDelete={handleDelete}
                     ></Inventory>)
                 }
 

@@ -2,9 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import useFirebase from '../../authentication/useFirebase';
 
-const Inventory = ({ inventor }) => {
+const Inventory = ({ inventor, handleDelete }) => {
     const { name, price, description, img, quantity, supplier } = inventor;
-    const { user, } = useFirebase()
+    const { user, } = useFirebase();
+
+
+
+
     return (
         <>
             <div>
@@ -24,7 +28,7 @@ const Inventory = ({ inventor }) => {
 
                         <button class="hover:bg-[#EDF9EF] flex items-center justify-center rounded-t-xl bg-lime-200 mt-2 h-9 font-bold hover:text-black text-[#4cd137]"  >Manage Item</button>
 
-                        <button class="hover:bg-[#EA2027] flex items-center justify-center rounded-b-xl bg-lime-200 mt-2 h-9 font-bold hover:text-black text-[#4cd137]"  >Delete Item</button>
+                        <button onClick={() => handleDelete(inventor._id)} class="hover:bg-[#EA2027] flex items-center justify-center rounded-b-xl bg-lime-200 mt-2 h-9 font-bold hover:text-black text-[#4cd137]"  >Delete Item</button>
 
 
                     </div>

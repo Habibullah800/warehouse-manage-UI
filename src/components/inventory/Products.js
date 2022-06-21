@@ -4,18 +4,13 @@ import Product from './Product';
 
 const Products = () => {
     const [items, setItems] = useState([]);
-    const [inventories, setInventory] = useState([]);
 
     useEffect(() => {
-        fetch('items.json')
+        fetch('http://localhost:5000/product')
             .then(res => res.json())
             .then(data => setItems(data));
     }, [])
-    useEffect(() => {
-        fetch('items.json')
-            .then(res => res.json())
-            .then(data => setInventory(data));
-    }, [])
+
 
     return (
         <div>
