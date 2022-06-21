@@ -1,9 +1,10 @@
 import React from 'react';
 import { useLocation, Navigate, Outlet } from 'react-router-dom'
+import useFirebase from './useFirebase';
 
 const PrivateRoute = () => {
     const location = useLocation();
-    const user = false;
+    const { user, } = useFirebase()
 
 
     if (!user) {

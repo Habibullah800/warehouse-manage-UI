@@ -42,7 +42,7 @@ const Navbar = () => {
 
                                 <label tabindex="0" class="btn btn-ghost btn-circle avatar mx-auto">
                                     <div class="w-10 rounded-full">
-                                        <img src={user.photoURL} alt='profile' />
+                                        <img src={photo} alt='profile' />
                                     </div>
                                 </label>
 
@@ -57,9 +57,11 @@ const Navbar = () => {
 
                             <Link class="hover:bg-lime-300 flex items-center justify-center hover:text-black text-[#4cd137] font-semibold rounded-b-xl bg-lime-200 shadow-lg shadow-cyan-300/50 ml-2 px-4 w-20 h-12 " to="/">Home</Link>
 
+                            <Link class="hover:bg-lime-300 flex items-center justify-center hover:text-black text-[#4cd137] font-semibold rounded-b-xl bg-lime-200 shadow-lg shadow-cyan-300/50 ml-2 px-4 w-[168px] h-12 " to="/manageinventory">Manage Inventory</Link>
+
+
                             <Link class="hover:bg-lime-300 flex items-center justify-center hover:text-black text-[#4cd137] font-semibold rounded-b-xl bg-lime-200 shadow-lg shadow-cyan-300/50 ml-2 px-4 w-20 h-12 " to="/blog">Blog</Link>
 
-                            <Link class="hover:bg-lime-300 flex items-center justify-center hover:text-black text-[#4cd137] font-semibold rounded-b-xl bg-lime-200 shadow-lg shadow-cyan-300/50 ml-2 px-4 w-20 h-12 " to="/link">Link</Link>
 
                             <Link class="hover:bg-lime-300 flex items-center justify-center hover:text-black text-[#4cd137] font-semibold rounded-b-xl bg-lime-200 shadow-lg shadow-cyan-300/50 ml-2 px-4 w-20 h-12 " to="/link">Link</Link>
 
@@ -69,7 +71,7 @@ const Navbar = () => {
                     <div class="navbar-end">
                         <label tabindex="0" class="btn btn-ghost btn-circle avatar">
                             <div class="w-10 rounded-full">
-                                <img src={user.photoURL} alt='profile' />
+                                <img src={photo} alt='profile' />
                             </div>
                         </label>
 

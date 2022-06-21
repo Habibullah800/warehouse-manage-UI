@@ -6,6 +6,8 @@ import Navbar from './components/Navbar';
 import Blog from './components/Blog';
 import PrivateRoute from './authentication/PrivateRoute';
 import Register from './components/Register';
+import ManageInventory from './components/inventory/ManageInventory';
+import AddItem from './components/AddItem/AddItem';
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
 
         <Route element={<PrivateRoute />}>
           <Route path="/blog" element={<Blog />} />
+          <Route path="/manageinventory" element={<ManageInventory />} />
+          <Route path="/additem" element={<AddItem />} />
+
         </Route>
 
 

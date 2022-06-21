@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "name": "Female Jacket",
+        "quantity": 22,
+        "price": "600",
+        "supplier": "Ab",
+        "description": "One of the most timeless outfits that are worn by everyone once a year...",
+        "img": "https://i.ibb.co/YP0dwWP/jacket-1-removebg-preview.jpg"
+    },
+    {
+        "id": 2,
+        "name": "female suit",
+        "quantity": 24,
+        "price": "600",
+        "supplier": "Net",
+        "description": " it an elegant Megan Markel look with a trench coat or a badass Rihann...",
+        "img": "https://i.ibb.co/CsbBdKv/jacket-2-removebg-preview.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Trucker Jacket",
+        "quantity": 13,
+        "price": "400",
+        "supplier": "Mon",
+        "description": "The style is typically short and fitted and often made of blue denim. ...",
+        "img": "https://i.ibb.co/KLYmDSk/jacket-3-removebg-preview.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Bomber Jacket",
+        "quantity": 9,
+        "price": "180",
+        "supplier": "Bb",
+        "description": "The Bomber jacket was originally worn as a military jacket by the sold...",
+        "img": "https://i.ibb.co/Qvj0KdX/jacket-4-removebg-preview.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Biker Jacket",
+        "quantity": 10,
+        "price": "100",
+        "supplier": "Con",
+        "description": "The style originates from the US Air Force, where it was worn by fligh...",
+        "img": "https://i.ibb.co/Ky3D1bS/jacket-5-removebg-preview.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Trucker Jacket",
+        "quantity": 16,
+        "price": "300",
+        "supplier": "Ech",
+        "description": "The style is typically short and fitted and often made of blue denim. ...",
+        "img": "https://i.ibb.co/M8zD4n4/jacket-6-removebg-preview.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Denim Jackets",
+        "quantity": 21,
+        "price": "300",
+        "supplier": "Ab",
+        "description": "This versatile outerwear option looks excellent with countless casual ...",
+        "img": "https://i.ibb.co/CsbBdKv/jacket-2-removebg-preview.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Track Jacket",
+        "quantity": 7,
+        "price": "300",
+        "supplier": "Ifl",
+        "description": "This comfortable, lightweight style typically features a zip front alo...",
+        "img": "https://i.ibb.co/Ky3D1bS/jacket-5-removebg-preview.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Blouson Jacket",
+        "quantity": 40,
+        "price": "250",
+        "supplier": "Ftml",
+        "description": "The style features fitted or elastic cuffs and waistband, which cause ...",
+        "img": "https://i.ibb.co/M8zD4n4/jacket-6-removebg-preview.jpg"
+    }
+]
