@@ -40,7 +40,7 @@ const Navbar = () => {
                                             <Link class="hover:bg-lime-200 flex items-center justify-center bg-[#EDF9EF] mb-2 h-10 font-semibold hover:text-black text-[#4cd137]" to="/manageinventory">Manage Inventory</Link>
 
 
-                                            <Link class="hover:bg-lime-200 flex items-center justify-center bg-[#EDF9EF] mb-2 h-10 font-semibold hover:text-black text-[#4cd137]" to="/link">My item</Link>
+                                            <Link class="hover:bg-lime-200 flex items-center justify-center bg-[#EDF9EF] mb-2 h-10 font-semibold hover:text-black text-[#4cd137]" to="/myitem">My item</Link>
 
                                             <Link className='hover:bg-lime-200 flex items-center justify-center bg-[#EDF9EF] mb-2 h-10 font-semibold hover:text-black text-[#4cd137]' to="/" onClick={handleSignOut} >Sign Out
                                             </Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
                                         <Link class="hover:bg-lime-300 flex items-center justify-center hover:text-black text-[#4cd137] font-semibold rounded-b-xl bg-lime-200 shadow-lg shadow-cyan-300/50 ml-2 px-4 w-[168px] h-12 " to="/manageinventory">Manage Inventory</Link>
 
 
-                                        <Link class="hover:bg-lime-300 flex items-center justify-center hover:text-black text-[#4cd137] font-semibold rounded-b-xl bg-lime-200 shadow-lg shadow-cyan-300/50 ml-2 px-4 w-[93px] h-12 " to="/link">My item</Link>
+                                        <Link class="hover:bg-lime-300 flex items-center justify-center hover:text-black text-[#4cd137] font-semibold rounded-b-xl bg-lime-200 shadow-lg shadow-cyan-300/50 ml-2 px-4 w-[93px] h-12 " to="/myitem">My item</Link>
                                     </div>
 
                                     :
